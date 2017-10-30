@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>字符串和数组</title>
+</head>
+<body>
+	
+
+
+	<script type="text/javascript">
+		var s = "Hello,World!";
+		//大写
+		s.toUpperCase();
+		//小写
+		s.toLowerCase();
+		//搜索指定字符串出现的位置
+		s.indexOf("World");//6
+		s.indexOf("world");//-1
+		//返回指定区间的子串
+		s.substring(0,5);//"Hello"
+		s.substring(7);//"orld!"
+
+
+
+		var arr = [1,3,4,"a",null,true];
+		//搜索指定字符串出现的位置
+		arr.indexOf(4);//2
+		//返回指定区间的数组
+		arr.slice();//[1,3,4,"a",null,true]
+		arr.slice(0,3);//[1,3,4]
+		//添加
+		arr.push("e");//尾部
+		arr.unshift("e");//头部
+		//弹出
+		arr.pop();//尾部
+		arr.shift();//头部
+		//排序
+		arr.sort();
+		//反转
+		arr.reverse();
+		//
+		arr.splice(2,3,"q","w");//从索引2开始删3个元素，再加两个元素
+		//数组和数组相连
+		arr.concat(2,5,6);//[1,3,4,"a",null,true,2,5,6]
+		//将数组连成字符串
+		arr.join("-");//1-3-4-a-.....
+		</script>
+</body>
+</html>
